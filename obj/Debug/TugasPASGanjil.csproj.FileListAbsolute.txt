@@ -1,0 +1,11 @@
+E:\Project\VS2017 Projects\TugasPASGanjil\TugasPASGanjil\obj\Debug\TugasPASGanjil.csprojResolveAssemblyReference.cache
+E:\Project\VS2017 Projects\TugasPASGanjil\TugasPASGanjil\obj\Debug\TugasPASGanjil.Form1.resources
+E:\Project\VS2017 Projects\TugasPASGanjil\TugasPASGanjil\obj\Debug\TugasPASGanjil.Form2.resources
+E:\Project\VS2017 Projects\TugasPASGanjil\TugasPASGanjil\obj\Debug\TugasPASGanjil.Properties.Resources.resources
+E:\Project\VS2017 Projects\TugasPASGanjil\TugasPASGanjil\obj\Debug\TugasPASGanjil.csproj.GenerateResource.Cache
+E:\Project\VS2017 Projects\TugasPASGanjil\TugasPASGanjil\bin\Debug\TugasPASGanjil.exe.config
+E:\Project\VS2017 Projects\TugasPASGanjil\TugasPASGanjil\bin\Debug\TugasPASGanjil.exe
+E:\Project\VS2017 Projects\TugasPASGanjil\TugasPASGanjil\bin\Debug\TugasPASGanjil.pdb
+E:\Project\VS2017 Projects\TugasPASGanjil\TugasPASGanjil\bin\Debug\Bunifu_UI_v1.5.3.dll
+E:\Project\VS2017 Projects\TugasPASGanjil\TugasPASGanjil\obj\Debug\TugasPASGanjil.exe
+E:\Project\VS2017 Projects\TugasPASGanjil\TugasPASGanjil\obj\Debug\TugasPASGanjil.pdb
