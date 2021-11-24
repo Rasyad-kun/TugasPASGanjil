@@ -1,4 +1,5 @@
-﻿namespace TugasPASGanjil
+﻿
+namespace TugasPASGanjil
 {
     partial class Form2
     {
@@ -29,7 +30,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelHeader = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel_user = new System.Windows.Forms.Panel();
@@ -38,50 +39,59 @@
             this.l_username = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_dashboard = new System.Windows.Forms.Panel();
-            this.bib_dashboard = new Bunifu.Framework.UI.BunifuImageButton();
             this.l_dashboard = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel_main = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.pb_close = new System.Windows.Forms.PictureBox();
+            this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel_user.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pp)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel_dashboard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bib_dashboard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel_main.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_close)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelHeader
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(165)))), ((int)(((byte)(0)))));
-            this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Location = new System.Drawing.Point(6, 6);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1172, 57);
-            this.panel1.TabIndex = 0;
+            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(165)))), ((int)(((byte)(0)))));
+            this.panelHeader.Controls.Add(this.pb_close);
+            this.panelHeader.Controls.Add(this.pictureBox6);
+            this.panelHeader.Controls.Add(this.label7);
+            this.panelHeader.Location = new System.Drawing.Point(12, 12);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(1160, 57);
+            this.panelHeader.TabIndex = 0;
+            this.panelHeader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseDown);
+            this.panelHeader.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseMove);
+            this.panelHeader.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseUp);
             // 
             // pictureBox6
             // 
@@ -92,6 +102,9 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 3;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseDown);
+            this.pictureBox6.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseMove);
+            this.pictureBox6.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseUp);
             // 
             // label7
             // 
@@ -103,6 +116,9 @@
             this.label7.Size = new System.Drawing.Size(183, 48);
             this.label7.TabIndex = 5;
             this.label7.Text = "CashierApp";
+            this.label7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseDown);
+            this.label7.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseMove);
+            this.label7.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseUp);
             // 
             // panel_user
             // 
@@ -110,9 +126,9 @@
             this.panel_user.Controls.Add(this.pb_pp);
             this.panel_user.Controls.Add(this.l_role);
             this.panel_user.Controls.Add(this.l_username);
-            this.panel_user.Location = new System.Drawing.Point(6, 69);
+            this.panel_user.Location = new System.Drawing.Point(12, 75);
             this.panel_user.Name = "panel_user";
-            this.panel_user.Size = new System.Drawing.Size(327, 67);
+            this.panel_user.Size = new System.Drawing.Size(321, 67);
             this.panel_user.TabIndex = 1;
             // 
             // pb_pp
@@ -154,34 +170,31 @@
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.panel_dashboard);
-            this.panel3.Location = new System.Drawing.Point(6, 142);
+            this.panel3.Location = new System.Drawing.Point(12, 148);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(327, 507);
+            this.panel3.Size = new System.Drawing.Size(321, 501);
             this.panel3.TabIndex = 2;
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(32)))), ((int)(((byte)(50)))));
-            this.panel5.Controls.Add(this.bunifuImageButton3);
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(71)))), ((int)(((byte)(86)))));
+            this.panel5.Controls.Add(this.pictureBox8);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Location = new System.Drawing.Point(3, 249);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(321, 76);
+            this.panel5.Size = new System.Drawing.Size(315, 76);
             this.panel5.TabIndex = 5;
             // 
-            // bunifuImageButton3
+            // pictureBox8
             // 
-            this.bunifuImageButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(32)))), ((int)(((byte)(50)))));
-            this.bunifuImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton3.Image")));
-            this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(278, 14);
-            this.bunifuImageButton3.Name = "bunifuImageButton3";
-            this.bunifuImageButton3.Size = new System.Drawing.Size(35, 46);
-            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton3.TabIndex = 4;
-            this.bunifuImageButton3.TabStop = false;
-            this.bunifuImageButton3.Zoom = 10;
+            this.pictureBox8.Image = global::TugasPASGanjil.Properties.Resources.arrow;
+            this.pictureBox8.Location = new System.Drawing.Point(268, 13);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(44, 48);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 6;
+            this.pictureBox8.TabStop = false;
             // 
             // label3
             // 
@@ -206,27 +219,24 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(32)))), ((int)(((byte)(50)))));
-            this.panel4.Controls.Add(this.bunifuImageButton2);
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(71)))), ((int)(((byte)(86)))));
+            this.panel4.Controls.Add(this.pictureBox7);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Location = new System.Drawing.Point(3, 167);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(321, 76);
+            this.panel4.Size = new System.Drawing.Size(315, 76);
             this.panel4.TabIndex = 5;
             // 
-            // bunifuImageButton2
+            // pictureBox7
             // 
-            this.bunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(32)))), ((int)(((byte)(50)))));
-            this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(278, 14);
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(35, 46);
-            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton2.TabIndex = 4;
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Zoom = 10;
+            this.pictureBox7.Image = global::TugasPASGanjil.Properties.Resources.arrow;
+            this.pictureBox7.Location = new System.Drawing.Point(268, 13);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(44, 48);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 5;
+            this.pictureBox7.TabStop = false;
             // 
             // label2
             // 
@@ -251,27 +261,24 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(32)))), ((int)(((byte)(50)))));
-            this.panel2.Controls.Add(this.bunifuImageButton1);
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(51)))), ((int)(((byte)(68)))));
+            this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(3, 85);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(321, 76);
+            this.panel2.Size = new System.Drawing.Size(315, 76);
             this.panel2.TabIndex = 5;
             // 
-            // bunifuImageButton1
+            // pictureBox5
             // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(32)))), ((int)(((byte)(50)))));
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(278, 14);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(35, 46);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 4;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
+            this.pictureBox5.Image = global::TugasPASGanjil.Properties.Resources.arrow;
+            this.pictureBox5.Location = new System.Drawing.Point(268, 13);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(44, 48);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
             // 
             // label1
             // 
@@ -297,26 +304,12 @@
             // panel_dashboard
             // 
             this.panel_dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(32)))), ((int)(((byte)(50)))));
-            this.panel_dashboard.Controls.Add(this.bib_dashboard);
             this.panel_dashboard.Controls.Add(this.l_dashboard);
             this.panel_dashboard.Controls.Add(this.pictureBox2);
             this.panel_dashboard.Location = new System.Drawing.Point(3, 3);
             this.panel_dashboard.Name = "panel_dashboard";
-            this.panel_dashboard.Size = new System.Drawing.Size(321, 76);
+            this.panel_dashboard.Size = new System.Drawing.Size(315, 76);
             this.panel_dashboard.TabIndex = 2;
-            // 
-            // bib_dashboard
-            // 
-            this.bib_dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(32)))), ((int)(((byte)(50)))));
-            this.bib_dashboard.Image = ((System.Drawing.Image)(resources.GetObject("bib_dashboard.Image")));
-            this.bib_dashboard.ImageActive = null;
-            this.bib_dashboard.Location = new System.Drawing.Point(278, 14);
-            this.bib_dashboard.Name = "bib_dashboard";
-            this.bib_dashboard.Size = new System.Drawing.Size(35, 46);
-            this.bib_dashboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bib_dashboard.TabIndex = 4;
-            this.bib_dashboard.TabStop = false;
-            this.bib_dashboard.Zoom = 10;
             // 
             // l_dashboard
             // 
@@ -342,10 +335,57 @@
             // panel_main
             // 
             this.panel_main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(71)))), ((int)(((byte)(86)))));
-            this.panel_main.Location = new System.Drawing.Point(339, 69);
+            this.panel_main.Controls.Add(this.panel9);
+            this.panel_main.Controls.Add(this.panel8);
+            this.panel_main.Controls.Add(this.panel7);
+            this.panel_main.Controls.Add(this.panel6);
+            this.panel_main.Location = new System.Drawing.Point(342, 75);
             this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(839, 586);
+            this.panel_main.Size = new System.Drawing.Size(830, 574);
             this.panel_main.TabIndex = 3;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(77)))), ((int)(((byte)(66)))));
+            this.panel9.Location = new System.Drawing.Point(623, 37);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(175, 100);
+            this.panel9.TabIndex = 1;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(194)))), ((int)(((byte)(240)))));
+            this.panel8.Location = new System.Drawing.Point(426, 37);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(175, 100);
+            this.panel8.TabIndex = 1;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(186)))), ((int)(((byte)(61)))));
+            this.panel7.Location = new System.Drawing.Point(229, 37);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(175, 100);
+            this.panel7.TabIndex = 1;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(77)))), ((int)(((byte)(178)))));
+            this.panel6.Location = new System.Drawing.Point(32, 37);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(175, 100);
+            this.panel6.TabIndex = 0;
+            // 
+            // pb_close
+            // 
+            this.pb_close.Image = ((System.Drawing.Image)(resources.GetObject("pb_close.Image")));
+            this.pb_close.Location = new System.Drawing.Point(1108, 12);
+            this.pb_close.Name = "pb_close";
+            this.pb_close.Size = new System.Drawing.Size(39, 28);
+            this.pb_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_close.TabIndex = 6;
+            this.pb_close.TabStop = false;
+            this.pb_close.Click += new System.EventHandler(this.pb_close_Click);
             // 
             // Form2
             // 
@@ -356,12 +396,12 @@
             this.Controls.Add(this.panel_main);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel_user);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
             this.Text = "Form2";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel_user.ResumeLayout(false);
             this.panel_user.PerformLayout();
@@ -369,27 +409,28 @@
             this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel_dashboard.ResumeLayout(false);
             this.panel_dashboard.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bib_dashboard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel_main.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_close)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelHeader;
         private System.Windows.Forms.Panel panel_user;
         private System.Windows.Forms.PictureBox pb_pp;
         private System.Windows.Forms.Panel panel3;
@@ -397,22 +438,26 @@
         private System.Windows.Forms.Panel panel_main;
         private System.Windows.Forms.Label l_username;
         private System.Windows.Forms.Label l_role;
-        private Bunifu.Framework.UI.BunifuImageButton bib_dashboard;
         private System.Windows.Forms.Label l_dashboard;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel5;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel4;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel2;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pb_close;
     }
 }
